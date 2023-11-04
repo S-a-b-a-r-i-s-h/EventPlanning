@@ -1,10 +1,9 @@
 import React from "react";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk,Roboto_Mono } from "next/font/google";
 import type { Metadata } from "next";
 
 import "./globals.css";
-// import { ThemeProvider } from "@/context/ThemeProvider";
+import { ThemeProvider } from "@/context/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +15,11 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-spaceGrotesk",
+});
+const robotomono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700"],
+  variable: "--font-roboto-mono",
 });
 
 export const metadata: Metadata = {
@@ -33,8 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
-        <h1 className="h1-bold">This is a piece of text</h1>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} ${robotomono.variable}`}>
+        <ThemeProvider>{children}</ThemeProvider>
+        {/* <h1 className="h1-bold">This is a piece of text</h1> */}
       </body>
     </html>
   )

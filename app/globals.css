@@ -9,6 +9,9 @@ body {
 }
 
 @layer utilities {
+  .violet-bg {
+    @apply bg-gradient-to-r from-violet-600 to-indigo-600;
+  }
   .flex-center {
     @apply flex justify-center items-center;
   }
@@ -43,6 +46,9 @@ body {
 
   .primary-gradient {
     background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+  }
+  .violet-gradient {
+    background: linear-gradient(129deg, #7300ff 0%, #af38ff 100%);
   }
 
   .dark-gradient {

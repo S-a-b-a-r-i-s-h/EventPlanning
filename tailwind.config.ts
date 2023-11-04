@@ -41,6 +41,7 @@ module.exports = {
       fontFamily: {
         inter: ["var(--font-inter)"],
         spaceGrotesk: ["var(--font-spaceGrotesk)"],
+        robotomono: ["var(--font-roboto-mono)"],
       },
       boxShadow: {
         "light-100":

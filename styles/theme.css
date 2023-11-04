@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
+  .violet-text {
+    @apply bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent;
+  }
+  .violet-bg {
+    @apply bg-gradient-to-r from-violet-600 to-indigo-600;
+  }
   .background-light850_dark100 {
     @apply bg-light-850 dark:bg-dark-100;
   }
@@ -193,6 +199,9 @@
 
   .primary-gradient {
     background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+  }
+  .violet-gradient {
+    background: linear-gradient(129deg, #7300ff 0%, #af38ff 100%);
   }
 
   .dark-gradient {
