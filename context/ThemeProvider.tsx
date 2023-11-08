@@ -44,3 +44,4 @@ export function useTheme() {
 
   return context;
 }
+// export const useTheme = () => useContext(ThemeContext);

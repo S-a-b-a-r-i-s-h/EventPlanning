@@ -1,14 +1,20 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import Theme from "./Theme";
 import { sidebarLinks } from "@/constants";
 import MobileNav from "./MobileNav";
+import { useTheme } from "@/context/ThemeProvider";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
+  const { mode } = useTheme();
   return (
     <nav
-      className="flex-between background-light900_dark200
-        fixed z-50 w-full gap-5 p-6 shadow-light-300 dark:shadow-none sm:px-12"
+      className={`flex-between 
+        fixed z-50 w-full gap-5 p-6 shadow-lg dark:shadow-light-200 sm:px-12
+        ${mode === "light" ? "light-gradient-bg" : "dark-gradient-bg"}
+        `}
     >
       <Link href="/" className="flex flex-col items-start max-lg:hidden">
         <p
@@ -35,8 +41,9 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex-between gap-5">
-      <Theme />
-      <MobileNav />
+        <Theme />
+        <UserButton afterSignOutUrl="/"/>
+        <MobileNav />
       </div>
     </nav>
   );

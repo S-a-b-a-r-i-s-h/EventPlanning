@@ -169,3 +169,53 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.dark-gradient-bg {
+  background: linear-gradient(311deg, #11002b, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: DarkGradient 13s ease infinite;
+  -moz-animation: DarkGradient 13s ease infinite;
+  animation: DarkGradient 13s ease infinite;
+}
+
+@-webkit-keyframes DarkGradient {
+  0%{background-position:0% 19%}
+  50%{background-position:100% 82%}
+  100%{background-position:0% 19%}
+}
+@-moz-keyframes DarkGradient {
+  0%{background-position:0% 19%}
+  50%{background-position:100% 82%}
+  100%{background-position:0% 19%}
+}
+@keyframes DarkGradient {
+  0%{background-position:0% 19%}
+  50%{background-position:100% 82%}
+  100%{background-position:0% 19%}
+}
+
+.light-gradient-bg {
+  background: linear-gradient(303deg, #d8c9ff, #ffffff);
+  background-size: 400% 400%;
+
+  -webkit-animation: LightGradient 13s ease infinite;
+  -moz-animation: LightGradient 13s ease infinite;
+  animation: LightGradient 13s ease infinite;
+}
+
+@-webkit-keyframes LightGradient {
+  0%{background-position:0% 18%}
+  50%{background-position:100% 83%}
+  100%{background-position:0% 18%}
+}
+@-moz-keyframes LightGradient {
+  0%{background-position:0% 18%}
+  50%{background-position:100% 83%}
+  100%{background-position:0% 18%}
+}
+@keyframes LightGradient {
+  0%{background-position:0% 18%}
+  50%{background-position:100% 83%}
+  100%{background-position:0% 18%}
+}

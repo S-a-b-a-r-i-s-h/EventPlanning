@@ -12,7 +12,7 @@ import Link from "next/link";
 import { sidebarLinks } from "@/constants";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
-
+import { SignedOut } from "@clerk/nextjs";
 const NavContent = () => {
   const pathname = usePathname();
 
@@ -80,6 +80,7 @@ const MobileNav = () => {
           <SheetClose asChild>
             <NavContent />
           </SheetClose>
+          <SignedOut>
           <div className="flex flex-col gap-3">
             <SheetClose asChild>
               <Link href="/sign-in">
@@ -97,6 +98,7 @@ const MobileNav = () => {
               </Link>
             </SheetClose>
           </div>
+          </SignedOut>
         </div>
       </SheetContent>
     </Sheet>

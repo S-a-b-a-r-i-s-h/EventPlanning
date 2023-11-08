@@ -27,47 +27,18 @@ export const sidebarLinks: SidebarLink[] = [
     route: "/join-us",
     label: "Join Us",
    },
-  // {
-  //   imgURL: "/assets/icons/tag.svg",
-  //   route: "/tags",
-  //   label: "Tags",
-  // },
-  // {
-  //   imgURL: "/assets/icons/user.svg",
-  //   route: "/profile",
-  //   label: "Profile",
-  // },
-  // {
-  //   imgURL: "/assets/icons/question.svg",
-  //   route: "/ask-question",
-  //   label: "Ask a question",
-  // },
+
 ];
 
-export const BADGE_CRITERIA = {
-  QUESTION_COUNT: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  ANSWER_COUNT: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  QUESTION_UPVOTES: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  ANSWER_UPVOTES: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  TOTAL_VIEWS: {
-    BRONZE: 1000,
-    SILVER: 10000,
-    GOLD: 100000,
-  },
-};
+export const execomCore = [
+  {execomName: "Campus Lead", name: "Habeeb Rahman", imgURL: "/assets/images/auth-dark.png" , linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/"},
+  {execomName: "Tech Lead", name: "Sabarish S", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/" },
+]
+export const execomSquad = [
+  {execomName: "Media Team", name: "Harikrishnan", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/"},
+  {execomName: "Media Team", name: "Megha Madhu", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/" },
+  {execomName: "Women In Tech Facilitator", name: "Ajmi J Fathima", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/" },
+  {execomName: "Program Facilitator", name: "Athul Daniel", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/" },
+  {execomName: "Program Facilitator", name: "Noyal B Varghese", imgURL: "", linkedin: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/", github: "https://www.linkedin.com/in/sabarish-s-0b1b3a1b0/" },
+]
+
